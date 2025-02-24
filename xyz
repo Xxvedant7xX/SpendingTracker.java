@@ -1,0 +1,78 @@
+        // JButton btnPredictExpense = new JButton("Predict Expense");
+        // btnPredictExpense.addActionListener(new ActionListener() {
+        //     public void actionPerformed(ActionEvent e) {
+        //         String userCategory = JOptionPane.showInputDialog(frame, "Enter the category name to predict expenses for:");
+        //         if (userCategory != null) {
+        //             userCategory = userCategory.toLowerCase();
+        //             predictExpense(userCategory);
+        //         }
+        //     }
+        // });        
+        // btnPredictExpense.setBounds(438, 39, 139, 25);
+        // bottomPanel.add(btnPredictExpense);
+
+
+
+
+    // private void predictExpense(String userCategory) {
+    //     if (userCategory.isEmpty()) {
+    //         JOptionPane.showMessageDialog(frame, "Category name cannot be empty.");
+    //         return;
+    //     }
+    
+    //     try {
+    //         ProcessBuilder processBuilder = new ProcessBuilder("python", "predict_expense.py", userCategory);
+    //         Process process = processBuilder.start();
+    //         int exitCode = process.waitFor();
+    //         if (exitCode == 0) {
+    //             System.out.println("Expense prediction successful.");
+    //             // Read and display the predicted expense from the output
+    //             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+    //             String predictedExpense = reader.readLine();
+    //             if (predictedExpense != null) {
+    //                 int expensePrediction = (int) Double.parseDouble(predictedExpense);
+    //                 JOptionPane.showMessageDialog(frame, "Predicted Expense for '" + userCategory + "': Rs." + expensePrediction);
+    //             } else {
+    //                 JOptionPane.showMessageDialog(frame, "Failed to retrieve prediction.");
+    //             }
+    //         } else {
+    //             System.err.println("Error predicting expense.");
+    //             JOptionPane.showMessageDialog(frame, "Error predicting expense.");
+    //         }
+    //     } catch (IOException | InterruptedException ex) {
+    //         ex.printStackTrace();
+    //         JOptionPane.showMessageDialog(frame, "Error predicting expense: " + ex.getMessage());
+    //     }
+    // }    
+
+
+
+
+
+
+
+
+        // JButton btnSaveModel = new JButton("Save Model");
+        // btnSaveModel.addActionListener(new ActionListener() {
+        //     public void actionPerformed(ActionEvent e) {
+        //         saveModel(currentAccountId);
+        //     }
+        // });
+        // btnSaveModel.setBounds(160, 100, 117, 25);
+        // bottomPanel.add(btnSaveModel);
+
+        // JButton btnPredict = new JButton("Predict Expense");
+        // btnPredict.addActionListener(new ActionListener() {
+        //     public void actionPerformed(ActionEvent e) {
+        //         String selectedCategory = JOptionPane.showInputDialog(frame, "Enter a category for expense prediction:");
+        
+        //         if (selectedCategory != null) {
+        //             String prediction = predictExpense(currentAccountId, selectedCategory);
+        //             if (prediction != null) {
+        //                 JOptionPane.showMessageDialog(frame, "Predicted Expense for Category '" + selectedCategory + "': " + prediction);
+        //             }
+        //         }
+        //     }
+        // });
+        // btnPredict.setBounds(290, 100, 150, 25);
+        // bottomPanel.add(btnPredict);
